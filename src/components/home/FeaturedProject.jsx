@@ -33,7 +33,7 @@ export function FeaturedProjects() {
     },
   ]
   return (
-    <section className="py-20 relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100/50">
+    <section className="py-30 relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100/50">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-[800px] h-[800px] bg-blue-500/[0.03] rounded-full blur-3xl"></div>
