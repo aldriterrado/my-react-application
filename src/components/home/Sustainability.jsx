@@ -73,6 +73,7 @@ export function Sustainability() {
                   <span className="relative bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                     Sustainable Future
                   </span>
+                  <span className="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-r from-emerald-600/10 to-teal-600/2 -rotate-2 transform -skew-x-12"></span>
                 </div>
               </h2>
             </div>
