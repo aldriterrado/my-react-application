@@ -81,7 +81,7 @@ function AboutNews() {
               </div>
               <h2 className="text-center lg:text-left text-3xl md:text-4xl sm:text-center font-bold text-gray-900 mb-8">
                 Building Tomorrow with
-                <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
+                <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500">
                   Innovation & Excellence
                 </span>
               </h2>
