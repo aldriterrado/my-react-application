@@ -1,17 +1,11 @@
-import { HeroSection } from "../components/home/HeroSection";
-import { AboutSection } from "../components/home/AboutSection";
-import { Services } from "../components/home/Services";
-import { FeaturedProjects } from "../components/home/FeaturedProject";
-import { Sustainability } from "../components/home/Sustainability";
-
+import HeroSection from "../components/home/HeroSection";
+import AboutNews
+ from "../components/home/AboutNews";
 function Home() {
     return (
         <div>
             <HeroSection />
-            <AboutSection />
-            <Services />
-            <FeaturedProjects />
-            <Sustainability />
+            <AboutNews />
         </div>
     );
 }
