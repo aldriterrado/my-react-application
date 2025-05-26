@@ -256,7 +256,7 @@ function Navbar() {
                 ${activeItem === 'Main Subsidiaries' ? 'ring-2 ring-blue-200' : ''}`}
               onClick={() => setActiveItem('Main Subsidiaries')}
             >
-              Main Subsidiaries / Associate Company
+              Main Subsidiaries
             </Link>
           </div>
           {/* Mobile menu button */}
@@ -380,7 +380,7 @@ function Navbar() {
               className="w-full mt-7 px-4 py-3 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-600 to-blue-800
                 text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-200/20"
             >
-              Main Subsidiaries / Associate Company
+              Main Subsidiaries
             </Link>
           </div>
         </div>

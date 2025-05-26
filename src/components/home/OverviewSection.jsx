@@ -70,7 +70,7 @@ function OverviewSection() {
         <div className="absolute top-0 right-1/4 w-64 h-64 bg-sky-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
         <div className="absolute -bottom-32 left-1/2 w-64 h-64 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
       </div>
-      <div className="max-w-7xl mx-auto relative">
+      <div className="container mx-auto relative">
         {/* Header */}
         <div className="text-center mb-16 relative">
           <div className="inline-flex items-center justify-center px-4 py-1.5 bg-blue-50 rounded-full mb-6">
