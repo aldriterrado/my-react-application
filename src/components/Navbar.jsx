@@ -6,6 +6,7 @@ function Navbar() {
   const [activeItem, setActiveItem] = useState('')
   const [isAboutMenuOpen, setIsAboutMenuOpen] = useState(false)
   const [isBusinessMenuOpen, setIsBusinessMenuOpen] = useState(false)
+  const [isInvestorMenuOpen, setIsInvenstorMenuOpen] = useState(false)
   const aboutSubMenu = {
     'Company Overview': [
       {
@@ -161,7 +162,7 @@ function Navbar() {
     </div>
   )
   return (
-    <header className="w-full fixed top-0 left-0 bg-white/95 backdrop-blur-md border-b border-gray-100/50 z-50">
+    <header className="w-full fixed top-0 left-0 shadow-md bg-white/95 backdrop-blur-lg border-b border-gray-100/50 z-50">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo with Text */}
@@ -172,8 +173,8 @@ function Navbar() {
               className="h-12 w-auto transition-transform duration-300 hover:scale-105"
             />
             <div className="flex flex-col">
-              <span className="text-gray-900 font-semibold tracking-tight text-lg">
-                Holdings (S) LTD
+              <span className="text-gray-900 font-semibold tracking-tight text-md">
+                HOLDINGS (S) LTD
               </span>
               <span className="text-xs text-gray-500 tracking-wide">
                 Excellence in Engineering
@@ -181,7 +182,7 @@ function Navbar() {
             </div>
           </Link>
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-10">
+          <div className="hidden xl:flex items-center space-x-10">
             <div className="flex items-center gap-1">
               {/* About Us Dropdown */}
               <div className="relative group px-2">
@@ -259,7 +260,7 @@ function Navbar() {
             </Link>
           </div>
           {/* Mobile menu button */}
-          <div className="lg:hidden">
+          <div className="xl:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2.5 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-50/80 transition-all duration-200"
@@ -274,7 +275,7 @@ function Navbar() {
         </div>
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'} overflow-auto border-t border-gray-100/50 bg-white/95 backdrop-blur-md`}
+          className={`xl:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'} overflow-auto border-t border-gray-100/50 bg-white/95 backdrop-blur-md`}
         >
           <div className="px-4 py-6 space-y-3">
             {/* About Us Mobile Menu */}

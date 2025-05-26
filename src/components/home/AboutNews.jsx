@@ -69,7 +69,7 @@ function AboutNews() {
   return (
     <section className="w-full bg-gradient-to-b from-gray-50 via-white to-gray-50/80 py-15">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-24">
           {/* About Section with Stats */}
           <div className="relative space-y-12">
             <div>
@@ -79,7 +79,7 @@ function AboutNews() {
                   About Us
                 </span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+              <h2 className="text-center lg:text-left text-3xl md:text-4xl sm:text-center font-bold text-gray-900 mb-8">
                 Building Tomorrow with
                 <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
                   Innovation & Excellence
@@ -143,7 +143,7 @@ function AboutNews() {
           </div>
           {/* News Section - Redesigned */}
           <div className="relative">
-            <div className="flex items-center justify-between mb-8">
+            <div className="mt-12 lg:mt-0 flex items-center justify-between mb-8">
               <div className="inline-flex items-center gap-4 bg-blue-50/50 px-4 py-2 rounded-full">
                 <div className="w-12 h-[2px] bg-gradient-to-r from-blue-600 to-blue-400"></div>
                 <span className="text-blue-600 text-sm tracking-wider uppercase font-medium">
@@ -167,7 +167,7 @@ function AboutNews() {
                       {item.isLatest ? (
                         <Clock className="w-8 h-8 text-blue-500" />
                       ) : (
-                        <CalendarDays className="w-8 h-8 text-gray-400" />
+                        <CalendarDays className="w-8 h-8 text-blue-600" />
                       )}
                     </div>
                     <div className="flex-1 min-w-0">
@@ -212,7 +212,7 @@ function AboutNews() {
                   to="/news"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-white text-blue-600 hover:bg-blue-50  transition-colors duration-300"
                 >
-                  <span className="text-sm font-medium">View All News</span>
+                  <span className="text-sm font-medium">Click here</span>
                   <ChevronRight className="w-4 h-4 text-blue-600" />
                 </Link>
               </div>
