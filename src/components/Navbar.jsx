@@ -10,18 +10,22 @@ function Navbar() {
   const aboutSubMenu = {
     'Company Overview': [
       {
-        name: 'Our Profile',
+        name: 'Who We Aare',
         path: '/about/profile',
       },
       {
         name: 'Group Structure',
         path: '/about/group-structure',
       },
+       {
+        name: 'Board Directors',
+        path: '/about/board-directors',
+      },
     ],
     'Our Achievement': [
       {
-        name: 'Milestone',
-        path: '/about/milestone',
+        name: 'Historical Moments',
+        path: '/about/historical-moments',
       },
       {
         name: 'Awards & Recognition',
@@ -77,13 +81,14 @@ function Navbar() {
       },
     ],
   }
+
   const menuItems = [
     {
       name: 'Investor Relations',
       path: '/investor-relations',
     },
     {
-      name: 'Projects',
+      name: `What We've Built`,
       path: '/projects',
     },
     {
@@ -247,17 +252,6 @@ function Navbar() {
                 </Link>
               ))}
             </div>
-            {/* Highlighted Button */}
-            <Link
-              to="/subsidiaries"
-              className={`ml-4 px-5 py-2.5 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-600 to-blue-800
-                text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-200/20
-                transform hover:-translate-y-0.5 active:translate-y-0
-                ${activeItem === 'Main Subsidiaries' ? 'ring-2 ring-blue-200' : ''}`}
-              onClick={() => setActiveItem('Main Subsidiaries')}
-            >
-              Main Subsidiaries
-            </Link>
           </div>
           {/* Mobile menu button */}
           <div className="xl:hidden">
@@ -277,7 +271,7 @@ function Navbar() {
         <div
           className={`xl:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'} overflow-auto border-t border-gray-100/50 bg-white/95 backdrop-blur-md`}
         >
-          <div className="px-4 py-6 space-y-3">
+          <div className="px-4 py-10 space-y-3">
             {/* About Us Mobile Menu */}
             <div className="space-y-3">
               <button

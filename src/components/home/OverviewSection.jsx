@@ -74,8 +74,8 @@ function OverviewSection() {
         {/* Header */}
         <div className="text-center mb-16 relative">
           <div className="inline-flex items-center justify-center px-4 py-1.5 bg-blue-50 rounded-full mb-6">
-            <span className="text-blue-600 text-sm font-medium uppercase">
-              Discover Our Services
+            <span className="text-blue-600 text-sm tracking-wider font-medium uppercase">
+              Discover Our Businesses
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 relative">
